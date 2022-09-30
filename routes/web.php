@@ -63,6 +63,17 @@ Route::any('en/{allsegments}', function($first, $rest = '') {
 Route::group(['prefix' => '/admin', 'middleware' => 'auth'], function() {
     Route::get('/', [HomeControllerAdmin::class, 'index'])->name('admin.home');
 
+    //parasanganta
+    // Route::get('/parasanganta/benda', [BendaControllerAdmin::class, 'index'])->name('admin.benda.index');
+    // Route::get('/parasanganta/bangunan', [BangunanControllerAdmin::class, 'index'])->name('admin.bangunan.index');
+    // Route::get('/parasanganta/struktur', [StrukturControllerAdmin::class, 'index'])->name('admin.struktur.index');
+    // Route::get('/parasanganta/situs', [SitusControllerAdmin::class, 'index'])->name('admin.situs.index');
+    // Route::get('/parasanganta/kawasan', [KawasanControllerAdmin::class, 'index'])->name('admin.kawasan.index');
+    // Route::get('/parasanganta/kegiatan', [KegiatanControllerAdmin::class, 'index'])->name('admin.kegiatan.index');
+
+
+    
+
     Route::get('/konten/artikel', [ArtikelControllerAdmin::class, 'index'])->name('admin.article.index');
     Route::get('/konten/artikel/tambah', [ArtikelControllerAdmin::class, 'add'])->name('admin.article.add');
     Route::post('/konten/artikel/tambah', [ArtikelControllerAdmin::class, 'store'])->name('admin.article.store');

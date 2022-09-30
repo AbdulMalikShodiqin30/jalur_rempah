@@ -26,6 +26,15 @@
           <a class="collapse-item {{ Request::segment(3) == 'video' ? 'active' : '' }}" href="{{ route('admin.video.index') }}"><i class="fas fa-fw fa-video mr-1"></i>Video</a>
           <a class="collapse-item {{ Request::segment(3) == 'publikasi' ? 'active' : '' }}" href="{{ route('admin.publication.index') }}"><i class="fas fa-fw fa-newspaper mr-1"></i>Publikasi</a>
           <a class="collapse-item {{ Request::segment(3) == 'audio' ? 'active' : '' }}" href="{{ route('admin.audio.index') }}"><i class="fas fa-fw fa-volume-up mr-1"></i>Audio</a>
+
+          {{-- <a class="collapse-item {{ Request::segment(3) == 'artikel' ? 'active' : '' }}" href="{{ route('admin.benda.index') }}"><i class="fas fa-fw fa-newspaper mr-1"></i> Benda</a>
+          <a class="collapse-item {{ Request::segment(3) == 'artikel' ? 'active' : '' }}" href="{{ route('admin.bangunan.index') }}"><i class="fas fa-fw fa-newspaper mr-1"></i> Bangunan</a>
+          <a class="collapse-item {{ Request::segment(3) == 'artikel' ? 'active' : '' }}" href="{{ route('admin.struktur.index') }}"><i class="fas fa-fw fa-newspaper mr-1"></i> Struktur</a>
+          <a class="collapse-item {{ Request::segment(3) == 'artikel' ? 'active' : '' }}" href="{{ route('admin.situs.index') }}"><i class="fas fa-fw fa-newspaper mr-1"></i> Situs</a>
+          <a class="collapse-item {{ Request::segment(3) == 'artikel' ? 'active' : '' }}" href="{{ route('admin.kawasan.index') }}"><i class="fas fa-fw fa-newspaper mr-1"></i> Kawasan</a>
+          <a class="collapse-item {{ Request::segment(3) == 'artikel' ? 'active' : '' }}" href="{{ route('admin.kegiatan.index') }}"><i class="fas fa-fw fa-newspaper mr-1"></i> Kegiatan</a> --}}
+
+
         </div>
       </div>
     </li>

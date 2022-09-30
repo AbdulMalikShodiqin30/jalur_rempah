@@ -70,6 +70,7 @@ class ArtikelController extends Controller
             'id_kontributor' => ($request->contributor != null && $request->id_kontributor != null) ? $request->id_kontributor : null,
             'slider_file' => $request->slider_utama != null ? $filename_slider : null,
             'slider_utama' => $request->slider_utama != null ? 1 : 0,
+            
             'contributor' => $request->contributor_type,
             'status' => $request->publish != null ? 'publikasi' : 'draft',
             'published_at' => $request->publish_date . " " . $request->publish_time
